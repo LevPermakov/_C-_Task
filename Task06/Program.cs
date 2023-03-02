@@ -17,5 +17,5 @@ if (result == 0)
 }
 else 
 {
-    Console.WriteLine($"Число {number} не является четным.");
+   // Console.WriteLine($"Число {number} не является четным.");
 } 
