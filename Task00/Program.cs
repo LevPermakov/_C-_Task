@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
-
+//Task00
 // Напишите программу, 
 // 1. которая на вход принимает число и 
 // 2. выдаёт его квадрат (число умноженное на само себя).
