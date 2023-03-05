@@ -14,7 +14,8 @@ Console.Write("Введите третье число: ");
 int thirdNumber = Convert.ToInt32(Console.ReadLine());
 
 int[] numbers = new int[] { firstNumber, secondNumber, thirdNumber };
-int size = 3;
+//int size = 3;
+int size = (numbers.Length);
 int numberMax = (numbers[0]);
 int numberTmp;
 
