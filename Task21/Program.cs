@@ -4,6 +4,11 @@
 // A (3,6,8); B (2,1,-7) -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
+// По задаче 21 
+// решение рабочее. 
+// Определять большую координату нет необходимости, 
+// т.к. при при возведении в квадрат результат положительный и при отрицательных значениях.
+
 Console.WriteLine("Введите координаты X для 1-й точки: ");
 Console.Write("Точка А X1:  ");
 int xA = Convert.ToInt32(Console.ReadLine());
@@ -35,18 +40,20 @@ Console.WriteLine(result);
 double Length(int x1, int y1, int z1, int x2, int y2, int z2)
 {
     //***** фиксируем плоскость min(X)
-    int Xmin = 0;
-    if (x1 > x2) Xmin = x2; else { Xmin = x1; }
+    //    int Xmin = 0;
+    //    if (x1 > x2) Xmin = x2; else { Xmin = x1; }
     //***** вычисляем гипотенузу в плоскос min(X)
     int lengthKx = x2 - x1;
     int lengthKy = y2 - y1; 
-    double lengthKz = z2 - z1;
-    if ( lengthKx < 0) lengthKx = -lengthKx;  
-    if ( lengthKy < 0) lengthKy = -lengthKy;  
-    if ( lengthKz < 0) lengthKz = -lengthKz;  
-    double lengthGipXmin = Math.Sqrt(lengthKy * lengthKy + lengthKz * lengthKz);
+    int lengthKz = z2 - z1; 
+    //    double lengthKz = z2 - z1;
+    //  if ( lengthKx < 0) lengthKx = -lengthKx;  
+    //  if ( lengthKy < 0) lengthKy = -lengthKy;  
+    //  if ( lengthKz < 0) lengthKz = -lengthKz;  
+    //    double lengthGipXmin = Math.Sqrt(lengthKy * lengthKy + lengthKz * lengthKz);
     //***** вычисляем гипотенузу в плоскости Z (найденная гипотенуза_Z стала катетом_Z)
-    lengthKz = lengthGipXmin;
-    double lengthGip = Math.Sqrt(lengthKx * lengthKx + lengthKz * lengthKz);
+    //    lengthKz = lengthGipXmin;
+    //    double lengthGip = Math.Sqrt(lengthKx * lengthKx + lengthKz * lengthKz);
+    double lengthGip = Math.Sqrt(lengthKx * lengthKx + lengthKz * lengthKz + lengthKy * lengthKy);
     return lengthGip;
 }
