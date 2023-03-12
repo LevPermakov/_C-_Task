@@ -1,9 +1,21 @@
-﻿// Задача 31: Задайте массив из 12 элементов, заполненный
-// случайными числами из промежутка [-9, 9]. Найдите сумму
-// отрицательных и положительных элементов массива.
+﻿// Задача 31: Задайте массив из 12 элементов, 
+// заполненный случайными числами из промежутка [-9, 9]. 
+// Найдите сумму отрицательных и положительных элементов массива.
+// 
 // Например, в массиве [3,9,-8,1,0,-7,2,-1,8,-3,-1,6] сумма
 // положительных чисел равна 29, сумма отрицательных равна
 // -20.
+
+int[] array = CreateArrayRndInt(12, -9, 9);
+PrintArray(array);
+
+int sumNegativeElem = GetSumNegativeElem(array);
+int sumPositiveElem = GetSumPositiveElem(array);
+
+Console.WriteLine($"Сумма положительных элементов = {sumPositiveElem}");
+Console.WriteLine($"Сумма отрицательных элементов = {sumNegativeElem}");
+
+
 
 int[] CreateArrayRndInt(int size, int min, int max)
 {
@@ -47,11 +59,4 @@ int GetSumPositiveElem(int[] arr)
     return sum;
 }
 
-int[] array = CreateArrayRndInt(12, -9, 9);
-PrintArray(array);
 
-int sumNegativeElem = GetSumNegativeElem(array);
-int sumPositiveElem = GetSumPositiveElem(array);
-
-Console.WriteLine($"Сумма положительных элементов = {sumPositiveElem}");
-Console.WriteLine($"Сумма отрицательных элементов = {sumNegativeElem}");
