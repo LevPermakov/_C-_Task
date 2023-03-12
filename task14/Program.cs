@@ -14,7 +14,7 @@ if (number == 0)
 else
 {
     bool multiple = Multiple(number);
-    //**** Через Тернарный оператор *************
+    //**** Через Тернарный оператор ***************
     // Console.WriteLine(multiple == true ? "Да" : "Нет");
     Console.WriteLine(multiple ? "Да" : "Нет");
 }
