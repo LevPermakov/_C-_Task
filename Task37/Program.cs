@@ -26,10 +26,11 @@ int[] ArrayMultiNum(int[] arr)
     int size = arr.Length / 2;
     if (arr.Length % 2 > 0) size += 1;
     int[] newArray = new int[size];
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < arr.Length / 2; i++)
     {
-        newArray[i] = arr[i] * arr[arr.Length - 1 - i];   // ??? Не пишет значение в массив newArray
+        newArray[i] = arr[i] * arr[arr.Length - 1 - i];
     }
+    if (newArray[size - 1]==0) newArray[size - 1] = arr[arr.Length / 2];
     return newArray;
 }
 
@@ -49,8 +50,8 @@ void PrintArray(int[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
-        else Console.Write($"{array[i]}");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
     }
     Console.Write("]");
 }
