@@ -7,7 +7,8 @@
 
 double MaxElementArray(double[] arr)
 {
-    double max = 0;
+    // double max = 0;
+    double max = -Int32.MaxValue;
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i] > max)  max = arr[i];
