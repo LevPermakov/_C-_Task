@@ -39,7 +39,7 @@ void Main()
         double koordY = k1 * koordX + b1;
         koordX = Math.Round(koordX, 2, MidpointRounding.ToZero);
         koordY = Math.Round(koordY, 2, MidpointRounding.ToZero);
-        Console.WriteLine($" Прямые пересекутся в точке: ({koordX}; {koordY})");
+        Console.WriteLine($" Прямые пересекутся в точке с координатами: ({koordX}; {koordY})");
     }
 }
 
