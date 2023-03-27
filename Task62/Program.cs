@@ -65,20 +65,9 @@ void PrintMatrix(int[,] matrix)
 void Main()
 {
     int[,] matrixA = CreateMatrixSpiralToRight(4, 4, 1);
-
     Console.WriteLine();
     Console.WriteLine("Матрица А: ");
     PrintMatrix(matrixA);
-
-
-    // Console.WriteLine();
-    // Console.WriteLine("Матрица B: ");
-    // PrintMatrix(matrixB);
-
-    // int[,] matrixC = MatrixMultiplication(matrixA, matrixB);
-    // Console.WriteLine();
-    // Console.WriteLine("Произведение матриц - Матрица C: ");
-    // PrintMatrix(matrixC);
 }
 
 Main();
