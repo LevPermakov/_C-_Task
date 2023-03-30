@@ -6,6 +6,21 @@
 // M = 4; N = 8 -> '4, 5, 6, 7, 8'
 
 
+
+Console.Write("Введите целое положительное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+NaturalNumbers(number);
+
+void NaturalNumbers(int num)
+{
+    if(num == 0) return;
+    // Console.Write($"{num} "); // 
+    NaturalNumbers (num -1);     // Хвостовой метод (когда рекурия завершат метод). Вывод: 5 4 3 2 1
+    Console.Write($"{num} ");    // Вывод: 1 2 3 4 5
+
+}
+
 Console.Write("Введите первое целое положительное число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе целое положительное число: ");

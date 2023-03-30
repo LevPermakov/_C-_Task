@@ -15,7 +15,7 @@ void NaturalNumbers(int num)
 {
     if(num == 0) return;
     // Console.Write($"{num} "); // 
-    NaturalNumbers (num -1);     // Хвостовой метод (когда рекурия завершат метод). Вывод: 5 4 3 2 1
+    NaturalNumbers (num -1);     // Хвостовой метод (когда рекурия завершает метод). Вывод: 5 4 3 2 1
     Console.Write($"{num} ");    // Вывод: 1 2 3 4 5
 
 }
