@@ -35,6 +35,7 @@ void Main()
 {
     int number1 = UserInput("Введите Первое целое положительное число M: ");
     int number2 = UserInput("Введите Второе целое положительное число N: ");
+    // проверить на натуральность
     int num = SumBetwееnNumber1Number2(number1, number2);
     Console.Write(num);
 }

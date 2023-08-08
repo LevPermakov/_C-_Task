@@ -11,6 +11,7 @@
 
 Console.Write("Введите целое положительное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
+// проверить на натуральность
 
 NaturalNumberToNull(number);
 
